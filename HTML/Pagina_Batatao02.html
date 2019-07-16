@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello Pizza</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../CSS\StyleSheet.css">
+  <!--Definindo a Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Definindo a BOOTSTRAP-->
+  <link rel="stylesheet" href="../bootstrap-4.3.1-dist\css/bootstrap.min.css">
+</head>
+
+<body id="fundo">
+  <header>
+    <!--Definindo a JAVA SCRIPT DO JQUERY-->
+
+    <div class="modal fade" id="janela-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Direitos Autorais!</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-primary"> &ensp;&ensp;&ensp;&ensp; Pagina desenvolvida pela empresa Itarget
+              Tecnologia</p>
+            <div class="text-center">
+              <img cente src="../IMAGENS\logo_itarget.png" alt="" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="banner">
+      <h1>
+        <img src="../IMAGENS/logo-helloPizza.png" alt="Hello Pizza">
+      </h1>
+      <nav>
+        <ul>
+          <!--<li><a href="file:///C:\Site_Lanchonete\HTML/Doc_02.html" target="_blank">Cardápio</a></li>-->
+
+          <li><a href="" data-toggle="modal" data-target="#Cardapio"> Cardapio </a></li>
+          <li><a href="" data-toggle="modal" data-target="#Logar"> Logar </a></li>
+          <li><a href="" data-toggle="modal" data-target="#janela-modal"> Sobre </a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--AQUI É O MODAL DA TELA DE LOGIN PARA O PERFIL DO USUARIO E AREA DE PROMOÇÕES-->
+
+    <div class="modal" id="Logar">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Seja Bem Vindo!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body" style="height: 175px">
+
+            <form id="form-login">
+              <div class="resposta-login"></div>
+              <div class="input-group mb-3">
+                
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Usuario</span>
+                </div>
+                <input type="text" class="form-control" name="Email" required>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Senha</span>
+                </div>
+                <input type="password" class="form-control" name="Senha" required>
+              </div>
+              <div class="btn-group">
+                  
+                <button class="btn btn-success" type="submit" title="Entrar"
+                  style='font-size:20px'>Entrar <i class='fas fa-check'></i></button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+              </div>
+            </form>
+          </div>
+
+          <ul>
+            <li> <a href="../HTML/Formulario_Cadastro.html" target="_blank">Clique aqui para fazer seu Cadastrar</a>
+            </li>
+          </ul>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <!-- Modal footer -->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Modal Cardapio-->
+    <div class="modal fade" id="Cardapio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Cardapio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div style="padding-left: 0px; padding-right: 100px" class="modal-body">
+
+            <div class="container">
+              <div class="row">
+                <table class="table border table-striped table-condesed table-hover col-mid-12 col-xs-12 col-xl-12">
+                  <thead>
+                    <tr class="bg-warning">
+                      <th>Sanduiches</th>
+                      <th>Valor</th>
+                      <th>Pasteis</th>
+                      <th>Valor</th>
+                      <th>Pizzas</th>
+                      <th>Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Hamburguer</td>
+                      <td>R$ 5,00</td>
+                      <td>Queijo</td>
+                      <td>R$ 3,00</td>
+                      <td>Mussarela G</td>
+                      <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                      <td>X-Burguer </td>
+                      <td>R$ 6,50</td>
+                      <td>Misto</td>
+                      <td>R$ 3,00</td>
+                      <td>Calabresa G</td>
+                      <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                      <td>Americano</td>
+                      <td>R$ 5,00</td>
+                      <td>Carne</td>
+                      <td>R$ 4,00</td>
+                      <td>Paulista &ensp;&ensp;G</td>
+                      <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                      <td>Lampeão</td>
+                      <td>R$ 7,50</td>
+                      <td>Mistão</td>
+                      <td>R$ 5,00</td>
+                      <td>Marguerita G</td>
+                      <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                      <td>Floresta</td>
+                      <td>R$ 7,50</td>
+                      <td>Frangovos</td>
+                      <td>R$ 4,50</td>
+                      <td>Portuguesa G</td>
+                      <td>R$ 17,00</td>
+                    </tr>
+                    <tr>
+                      <td>X-Bacon</td>
+                      <td>R$ 6,50</td>
+                      <td>Caipira</td>
+                      <td>R$ 5,50</td>
+                      <td>Frango & Catupirir G</td>
+                      <td>R$ 18,00</td>
+                    </tr>
+                    <tr>
+                      <td>Batatão Burguer</td>
+                      <td>R$ 8,00</td>
+                      <td>Cearense</td>
+                      <td>R$ 6,00</td>
+                      <td>Carne do Sol & Queijo G</td>
+                      <td>R$ 20,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div style="padding-left: 100px">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-md-10 col-xl-10">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe id="video-index1" src="https://player.vimeo.com/video/257667061?background=1" width="917"
+                  height="365" style="border: 0; width: 100%;" allowfullscreen="" data-ready="true"></iframe>
+              </div>
+              <div class="carousel-item">
+                <img src="../IMAGENS\slider\foto2.png" alt="Foto2">
+              </div>
+              <div class="carousel-item">
+                <img src="../IMAGENS\slider\foto3.png" alt="Foto3">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+  <footer>
+    <div id="copyright">
+      <h1>
+        <img src="../IMAGENS/logo-helloPizza.png" alt="Hello Pizza">
+      </h1>
+      <p>Pizzaria & fastfood.Entrega a domicilio Tel:085 998538967</p>
+    </div>
+  </footer>
+
+  <!--Definindo a JAVA SCRIPT DO BOOTSTRAP E O MAIN-->
+  <script src="js/jquery.js"></script>
+  <script src="../bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
