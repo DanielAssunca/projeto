@@ -29,7 +29,7 @@ $(function(){
 
     //Ajax para Login
     $("#FormCadastro").submit(function(){    
-      alert('ALERTA TESTE');  
+      alert('ALERTA asdasdsadsadadasdasd TESTE');  
         var dados = $("#FormCadastro").serialize();
         $.ajax({
             url: 'cadastro.php',
