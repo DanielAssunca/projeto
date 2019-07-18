@@ -2,13 +2,14 @@
 
 require '../conexao.php';
 
+$mensagem = "";
 $conexao = new Conexao();
 $con = $conexao->connection();
 
 
-   $res = pg_insert($con, 'pessoas', $_POST);
+$res = pg_insert($con, 'pessoas', $_POST);
 
-   $res  = array();
+   $retorno  = array();
    if ($res) {
        $mensagem .= "<div class='alert alert-success'>";
        $mensagem .= "<div>Cadastro Realizado com Sucesso!</div>";
