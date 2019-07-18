@@ -8,13 +8,24 @@ $con = $conexao->connection();
 
    $res = pg_insert($con, 'pessoas', $_POST);
 
-
- if ($res) {
-    echo "CADASTRO SALVO COM SUCESSO!!\n";
-}
-else {
-    echo "O usuário deve ter inserido entradas inválidas\n";
-}
+   $res  = array();
+   if ($res) {
+       $mensagem .= "<div class='alert alert-success'>";
+       $mensagem .= "<div>Cadastro Realizado com Sucesso!</div>";
+       $mensagem .= "</div>";
+       $retorno['mensagem'] = $mensagem;
+       $retorno['status'] = true;
+   
+   } else {
+       $mensagem .= "<div class='alert alert-danger'>";
+       $mensagem .= "<div>Cadastro não foi Gravado!</div>";
+       $mensagem .= "</div>";
+       $retorno['mensagem'] = $mensagem;
+       $retorno['status'] = false;
+   }
+   
+   echo json_encode($retorno);
 
 
 ?>
+
