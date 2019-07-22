@@ -39,6 +39,8 @@ $(function () {
                 $(".resposta-FormCadastro").html(data.mensagem);
                 if (data.status) {
                  
+                    
+                 
                 } else {
 
                 }
