@@ -38,10 +38,11 @@ $(function () {
                 data = JSON.parse(data);
                 $(".resposta-FormCadastro").html(data.mensagem);
                 if (data.status) {
-                    alert('deu certo essa porra');
+                    document.getElementById('Botao_Pedido').style.display = 'block';
                  
                 } else {
-                    alert('DEU ERRADO ESSA PORRA!');
+                  
+                    
 
                 }
             }
