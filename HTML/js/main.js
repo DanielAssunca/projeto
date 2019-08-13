@@ -39,10 +39,11 @@ $(function () {
                 $(".resposta-FormCadastro").html(data.mensagem);
                 if (data.status) {
                     document.getElementById('Botao_Pedido').style.display = 'block';
-                 
+                    document.getElementById('Cadastro_submiter').style.display = 'none';
+
+
+
                 } else {
-                  
-                    
 
                 }
             }
